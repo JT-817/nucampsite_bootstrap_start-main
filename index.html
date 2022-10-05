@@ -434,18 +434,6 @@
               campsites@nucamp.co</a
             >
           </div>
-          <div class="col-sm-4 text-center">
-            <a role="button" class="btn btn-link" href="tel:+15555555555"
-              ><i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a
-            ><br />
-            <a
-              role="button"
-              class="btn btn-link"
-              href="mailto:campsites@nucamp.co"
-              ><i class="fa fa-envelope fa-lg text-primary"></i>
-              campsites@nucamp.co</a
-            >
-          </div>
         </div>
       </div>
     </footer>
@@ -454,21 +442,5 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
-  <script>
-    $(function() {
-      $(".carousel").carousel( {interval: 2000 });
-      $("#carouselButton").click(function(){
-        $(".carousel").carousel("pause");
-        if($("#carouselButton").children("i").hasClass("fa-pause")){
-          $(".carousel").carousel("pause");
-          $("#carouselButton").children("i").removeClass("fa-pause");
-          $("#carouselButton").children("i").addClass("fa-play");
-        } else {
-          $(".carousel").carousel("cycle");
-          $("#carouselButton").children("i").removeClass("fa-play");
-          $("#carouselButton").children("i").addClass("fa-pause");
-        }
-      })
-    })
-  </script>
+  <script src="js/scripts.js"></script>
 </html>
